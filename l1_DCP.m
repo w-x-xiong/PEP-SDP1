@@ -20,6 +20,7 @@ fail = false;
 
 cnt = 0;
 
+%Note that the following line of code responsible for initialization has to be modified to accommodate your specific localization configuration
 y_ini = 1000*(rand(H+H*M+2*M*L,1)-0.5);
 
 y_est_mtx = [];
