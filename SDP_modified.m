@@ -1,5 +1,8 @@
 function [x_vec] = SDP_modified(Tx, Rx, Rg)
-
+%If the convex hull issues arise,
+%making the mixed semidefinite/second-order
+%cone program infeasible, please proceed
+%by omitting the second-order cone constraints.
 [~, M] = size(Tx);
 [~, L] = size(Rx);
 
